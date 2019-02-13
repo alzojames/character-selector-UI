@@ -9,10 +9,24 @@
   color: black;
 }
 
-h1{
+h1 { 
   font-family: mariof;
   font-size: 4vw;
   color: black;
+  font-size: 3em; 
+  text-align: center;
+  -webkit-transition: all .5s ease;
+  -moz-transition: all .5s ease;
+  transition: all .5s ease;
+}
+
+h1:hover { font-size: 2em; color: red; }
+
+@media screen and (max-width: 1000px){
+  h1 { 
+    font-size: 2em;
+    color: red;
+  }
 }
 
 body {
@@ -41,7 +55,7 @@ body {
   list-style: none;
   display: block;
   text-align: center;
-  width: 60%;
+  width: 50%;
 }
 
 /* .photo-grid:after {
@@ -82,9 +96,6 @@ body {
   transform: scale(1.05);
   border: 3px outset yellow;
 }
-/* #{
-  float: left;
-} */
 #mario:hover ~ #b {
   background:
     linear-gradient(
@@ -96,6 +107,7 @@ body {
      background-repeat: no-repeat; 
      background-position: center;
 }
+
 #toad:hover ~ #b{
   background:
     linear-gradient(
@@ -190,13 +202,42 @@ body {
      content: "Daisy";
      background-position: center;
   }
-
-/* .chang-color{
-  ba: var(--test-text-color);
-} */
-/* .player_name{
-  top: -100em;
-} */
+  #mario:hover{
+    opacity: 0.5;
+    filter: alpha(opacity=50); /* For IE8 and earlier */
+  }
+  #toad:hover{
+    opacity: 0.5;
+    filter: alpha(opacity=50); /* For IE8 and earlier */
+  }
+  #luigi:hover{
+    opacity: 0.5;
+    filter: alpha(opacity=50); /* For IE8 and earlier */
+  }
+  #koopa:hover{
+    opacity: 0.5;
+    filter: alpha(opacity=50); /* For IE8 and earlier */
+  }
+  #yoshi:hover{
+    opacity: 0.5;
+    filter: alpha(opacity=50); /* For IE8 and earlier */
+  }
+  #bowser:hover{
+    opacity: 0.5;
+    filter: alpha(opacity=50); /* For IE8 and earlier */
+  }
+  #waluigi:hover{
+    opacity: 0.5;
+    filter: alpha(opacity=50); /* For IE8 and earlier */
+  }
+  #daisy:hover{
+    opacity: 0.5;
+    filter: alpha(opacity=50); /* For IE8 and earlier */
+  }
+  #randomselect:hover{
+    opacity: 0.5;
+    filter: alpha(opacity=50); /* For IE8 and earlier */
+  }
 
 #b{
   background-size: cover;

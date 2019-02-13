@@ -1,7 +1,4 @@
-:root{
-  --test-text-color: blue;
-  --new-color: green;
-}
+
 
 @font-face {
   font-family: mariof;
@@ -46,7 +43,7 @@ body {
   padding:6% 2%;
   height: 100%;
   float: left;
-   border: 4px solid red;
+ 
 }
 
 .photo-grid {
@@ -246,9 +243,9 @@ body {
   position: relative; 
   height: 600px;
   width: 450px; 
-  border: 5px solid blue;
   right: -1300px;
   border-radius: 5px;
+  box-shadow: 5px 10px 18px #888888;
 }
 
 .photo-img-1 {
